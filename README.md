@@ -1,4 +1,4 @@
-Cycles.cpp finds the lengths at which cycles appear in pancake graphs.
+Cycles.cpp finds the lengths at which cycles appear in undirected pancake graphs.
 
 Core algorithm is modification of hawick's circuit and loops enumeration algorithm, as implemented in the boost library, to be multi-threaded and to self-impose depth-limits when cycles have been found for given depths (as this project is only interested in confirming the lengths at which cycles appear, not enumerating them.)
 
@@ -18,4 +18,4 @@ Remove undirectedS modified from adjancy list on line 170 to run on directed gra
 
 > typedef boost::adjacency_list< boost::vecS, boost::vecS/*, boost::undirectedS*/ > Graph;
 
-(May also want to replace instances of "-U" with "-D" in main, as "-U" is intended to notate undirect graphs.
+(May also want to replace instances of "-U" with "-D" in main, as "-U" is intended to notate undirect graphs.)
