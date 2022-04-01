@@ -8,7 +8,7 @@ Compile with GCC
 Run program and supply sides and permutations
 Will generate folder corresponding to specific graph, with files containing a sample cycle for each length at which a cycle was found
 
-##Directed Graphs
+## Directed Graphs
 By default, computes for undirected pancake graphs. 
 Remove undirectedS modified from adjancy list on line 170 to run on directed graphs
 > typedef boost::adjacency_list< boost::vecS, boost::vecS/*, boost::undirectedS*/ > Graph;
