@@ -3,7 +3,7 @@ Cycles.cpp finds the lengths at which cycles appear in undirected pancake graphs
 Core algorithm is modification of hawick's circuit and loops enumeration algorithm, as implemented in the boost library, to be multi-threaded and to self-impose depth-limits when cycles have been found for given depths (as this project is only interested in confirming the lengths at which cycles appear, not enumerating them.)
 
 ## How to Run
-Download Boost v1.73.0 to project directory, without replacing modified hawick_circuits.hpp supplied in project.
+Download Boost v1.73.0 to project directory, without replacing modified hawick_circuits.hpp supplied in project (i.e. replace boost's hawick_circuits with this project's.)
 
 Compile with GCC
 
